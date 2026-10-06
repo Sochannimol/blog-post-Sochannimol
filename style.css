@@ -1,0 +1,83 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+
+/* Buttons look like small default buttons in the example */
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000;
+  background: #efefef;
+  border: 1px solid #767676;
+  border-radius: 3px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Two columns of boxes */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* Clean box shape */
+.post {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.post h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.post p {
+  margin: 16px 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+@media (max-width: 700px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
